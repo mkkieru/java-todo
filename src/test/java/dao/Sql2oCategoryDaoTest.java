@@ -21,8 +21,8 @@ public class Sql2oCategoryDaoTest {
 
     @BeforeClass
     public static void setUp() throws Exception {
-        String connectionString = "jdbc:postgresql://localhost:5432/todolist_test";
-        Sql2o sql2o = new Sql2o(connectionString, "damark", "password");
+        String connectionString = "jdbc:postgresql://ec2-52-0-67-144.compute-1.amazonaws.com:5432/de848oq4eqgglv";
+        Sql2o sql2o = new Sql2o(connectionString, "xoombriafhslyl", "da361c1609b665f12c4badfbc68c8545a45809f905412534d8c1afaee770fbd4");
         categoryDao = new Sql2oCategoryDao(sql2o);
         taskDao = new Sql2oTaskDao(sql2o);
         conn = sql2o.open();
