@@ -23,7 +23,7 @@ public class App {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
 
-        String connectionString = "jdbc:postgresql://ec2-34-234-12-149.compute-1.amazonaws.com:5432/d1p4vrv03gi7sn";      //connect to todolist, not todolist_test!
+        String connectionString = "jdbc:postgresql://ec2-34-234-12-149.compute-1.amazonaws.com:5432/d1p4vrv03gi7sn"; //!
         Sql2o sql2o = new Sql2o(connectionString, "oovqufmokktvzq", "8e3a4007e82752263420901c1c46c3c73cd389827460b257438c145394c67fad");
         Sql2oTaskDao taskDao = new Sql2oTaskDao(sql2o);
         Sql2oCategoryDao categoryDao = new Sql2oCategoryDao(sql2o);

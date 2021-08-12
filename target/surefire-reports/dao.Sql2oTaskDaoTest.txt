@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: dao.Sql2oTaskDaoTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.696 sec <<< FAILURE!
-dao.Sql2oTaskDaoTest  Time elapsed: 0.696 sec  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.847 sec <<< FAILURE!
+dao.Sql2oTaskDaoTest  Time elapsed: 0.847 sec  <<< ERROR!
 org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "105.163.251.33", user "sfwbxkfwtrikhm", database "d9hu4q43c1k12s", SSL off
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.<init>(Connection.java:51)
@@ -43,7 +43,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for ho
 	at org.sql2o.Connection.createConnection(Connection.java:288)
 	... 25 more
 
-dao.Sql2oTaskDaoTest  Time elapsed: 0.696 sec  <<< ERROR!
+dao.Sql2oTaskDaoTest  Time elapsed: 0.847 sec  <<< ERROR!
 java.lang.NullPointerException
 	at dao.Sql2oTaskDaoTest.shutDown(Sql2oTaskDaoTest.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
