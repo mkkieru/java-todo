@@ -23,8 +23,8 @@ public class App {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
 
-        String connectionString = "jdbc:postgresql://ec2-34-234-12-149.compute-1.amazonaws.com:5432/d1p4vrv03gi7sn"; //!
-        Sql2o sql2o = new Sql2o(connectionString, "oovqufmokktvzq", "8e3a4007e82752263420901c1c46c3c73cd389827460b257438c145394c67fad");
+        String connectionString = "jdbc:postgresql://ec2-54-205-232-84.compute-1.amazonaws.com:5432/d9hu4q43c1k12s" + "?sslmode=require"; //!
+        Sql2o sql2o = new Sql2o(connectionString, "sfwbxkfwtrikhm", "5bbc9ba274f227c6268d56b2359f86e26fbef68006fa1ca864304acddadf4e74");
         Sql2oTaskDao taskDao = new Sql2oTaskDao(sql2o);
         Sql2oCategoryDao categoryDao = new Sql2oCategoryDao(sql2o);
 
