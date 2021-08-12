@@ -21,8 +21,8 @@ public class Sql2oCategoryDaoTest {
 
     @BeforeClass
     public static void setUp() throws Exception {
-        String connectionString = "jdbc:postgresql://ec2-52-0-67-144.compute-1.amazonaws.com:5432/de848oq4eqgglv";
-        Sql2o sql2o = new Sql2o(connectionString, "xoombriafhslyl", "da361c1609b665f12c4badfbc68c8545a45809f905412534d8c1afaee770fbd4");
+        String connectionString = "jdbc:postgresql://ec2-54-205-232-84.compute-1.amazonaws.com:5432/d9hu4q43c1k12s"; // connect to postgres test database
+        Sql2o sql2o = new Sql2o(connectionString, "sfwbxkfwtrikhm", "5bbc9ba274f227c6268d56b2359f86e26fbef68006fa1ca864304acddadf4e74");
         categoryDao = new Sql2oCategoryDao(sql2o);
         taskDao = new Sql2oTaskDao(sql2o);
         conn = sql2o.open();

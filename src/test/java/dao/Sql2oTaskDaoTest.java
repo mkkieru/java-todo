@@ -6,20 +6,28 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class Sql2oTaskDaoTest {
-    private Sql2oTaskDao taskDao; //ignore me for now. We'll create this soon.
-    private Connection conn; //must be sql2o class conn
+    private static Sql2oTaskDao taskDao;                //these variables are now static.
+    private static Connection conn;                     //these variables are now static.
 
-    @Before
-    public void setUp() throws Exception {
-        String connectionString = "jdbc:postgresql://ec2-54-205-232-84.compute-1.amazonaws.com:5432/d9hu4q43c1k12s";
-        Sql2o sql2o = new Sql2o(connectionString, "sfwbxkfwtrikhm", "5bbc9ba274f227c6268d56b2359f86e26fbef68006fa1ca864304acddadf4e74");
-        taskDao = new Sql2oTaskDao(sql2o); //ignore me for now
-        conn = sql2o.open(); //keep connection open through entire test so it does not get erased
+    @BeforeClass
+    public static void setUp() throws Exception {
+        String connectionString = "jdbc:postgresql://ec2-54-205-232-84.compute-1.amazonaws.com:5432/d9hu4q43c1k12s"; // connect to postgres test database
+        Sql2o sql2o = new Sql2o(connectionString, "sfwbxkfwtrikhm", "5bbc9ba274f227c6268d56b2359f86e26fbef68006fa1ca864304acddadf4e74");         // changed user and pass to null
+        taskDao = new Sql2oTaskDao(sql2o);
+        conn = sql2o.open();                                                        // open connection once before this test file is run
     }
 
     @After
     public void tearDown() throws Exception {
+        System.out.println("clearing database");
+        taskDao.clearAllTasks();
+
+    }
+
+    @AfterClass
+    public static void shutDown() throws Exception{
         conn.close();
+        System.out.println("connection closed");
     }
 
     @Test
