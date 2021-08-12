@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="models.TaskTest" time="0.028" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="models.TaskTest" time="0.033" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -65,5 +65,5 @@
   <testcase classname="models.TaskTest" name="TaskInstantiatesWithDescription_true" time="0.028"/>
   <testcase classname="models.TaskTest" name="isCompletedPropertyIsFalseAfterInstantiation" time="0"/>
   <testcase classname="models.TaskTest" name="NewTaskObjectGetsCorrectlyCreated_true" time="0"/>
-  <testcase classname="models.TaskTest" name="getCreatedAtInstantiatesWithCurrentTimeToday" time="0"/>
+  <testcase classname="models.TaskTest" name="getCreatedAtInstantiatesWithCurrentTimeToday" time="0.005"/>
 </testsuite>

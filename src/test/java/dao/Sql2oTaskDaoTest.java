@@ -1,4 +1,4 @@
-package dao;
+/*package dao;
 
 import models.Task;
 import org.sql2o.*;
@@ -100,4 +100,4 @@ public class Sql2oTaskDaoTest {
     public Task setupNewTask(){
         return new Task("Mow the lawn", 1);
     }
-}
+}*/

@@ -1,4 +1,4 @@
-package dao;
+/*package dao;
 
 import models.Category;
 import models.Task;
@@ -119,4 +119,4 @@ public class Sql2oCategoryDaoTest {
     public Category setupNewCategory(){
         return new Category("Yardwork");
     }
-}
+}*/
