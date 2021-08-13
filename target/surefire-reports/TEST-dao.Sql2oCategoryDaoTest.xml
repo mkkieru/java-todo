@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="dao.Sql2oCategoryDaoTest" time="1.079" errors="2" skipped="0">
+<testsuite tests="2" failures="0" name="dao.Sql2oCategoryDaoTest" time="1.494" errors="2" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="dao.Sql2oCategoryDaoTest" name="dao.Sql2oCategoryDaoTest" time="0.539">
+  <testcase classname="dao.Sql2oCategoryDaoTest" name="dao.Sql2oCategoryDaoTest" time="0.746">
     <error message="Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host &quot;105.163.251.33&quot;, user &quot;sfwbxkfwtrikhm&quot;, database &quot;d9hu4q43c1k12s&quot;, SSL off" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host &quot;105.163.251.33&quot;, user &quot;sfwbxkfwtrikhm&quot;, database &quot;d9hu4q43c1k12s&quot;, SSL off
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
@@ -104,7 +104,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for ho
 	... 25 more
 </error>
   </testcase>
-  <testcase classname="dao.Sql2oCategoryDaoTest" name="dao.Sql2oCategoryDaoTest" time="0.54">
+  <testcase classname="dao.Sql2oCategoryDaoTest" name="dao.Sql2oCategoryDaoTest" time="0.748">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at dao.Sql2oCategoryDaoTest.shutDown(Sql2oCategoryDaoTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
